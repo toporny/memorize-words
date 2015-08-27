@@ -1,0 +1,52 @@
+<ion-view id="topUp" title="Top Up" >
+	<ion-content >
+
+		<div class="bar-calm bar bar-header">
+			<div class="h1 title">Top Up</div>
+		</div>
+
+		<div class="content padding has-header">
+
+			<button
+				translate="CARD TOP UP"
+				class="button button-block button-calm"
+				ng-click="dashboard.goToPickUnknown()" >
+			</button>
+
+			<button
+				translate="ADD DEBIT CARD"
+				class="button button-block button-calm"
+				ng-click="dashboard.goToIntroduction()" >
+			</button>
+
+			<button
+				translate="VOUCHER TOP UP"
+				class="button button-block button-calm"
+				ng-click="dashboard.goToWordsList()" >
+			</button>
+
+			<button
+				translate="VOUCHER STORE LOCATOR"
+				class="button button-block button-calm"
+				ng-click="dashboard.goToWordsLi()" >
+			</button>
+
+			<button
+				translate="BANK TRANSFER"
+				class="button button-block button-calm"
+				ng-click="dashboard.testYourSelf()" >
+			</button>
+
+			<button
+				translate="BACK TO DASHBOARD"
+				class="button button-block button-stable"
+				ng-click="topUp.goToDashboard()" >
+			</button>
+
+			<p>{{dashboard.data.buttonName}}</p>
+
+		</div>
+
+
+	</ion-content>
+</ion-view>

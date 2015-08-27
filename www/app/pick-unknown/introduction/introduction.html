@@ -1,0 +1,44 @@
+<ion-view id="introduction"  title="Introduction" >
+	<ion-header-bar align-title="left" class="bar-positive" no-tap-scroll="true">
+	  <h1 class="title">Test </h1>
+	</ion-header-bar>
+
+	<ion-content>
+	!{{vm.friends}}!
+		<ion-item class="item item-icon-right"
+			collection-repeat="friend in introduction.friends"
+			collection-item-width="'100%'"
+			delegate-handle
+			ng-click="introduction.showDetailedTranslation()"
+			collection-item-height="'65'"
+		>
+				{{friend.name}}
+				<p ng-show="friend.color == 'assertive'">{{friend.description}}</p>
+			<i class="icon ion-ios-star{{friend.outline}}" ng-click="introduction.addWordToFavoritiesAndPlay($event, friend)"></i>
+		</ion-item>
+
+	          <div class="row" ng-click="transactionHistory.details(transaction)">
+
+	<!-- 		<a class="item item-icon-left item-icon-right" href="#">
+				<i class="icon ion-volume-medium"></i>
+					<h2>Today</h2>
+				<i class="icon ion-ios-star-outline"></i>
+			</a>
+
+			<a class="item item-icon-left item-icon-right" href="#">
+				<i class="icon ion-volume-medium"></i>
+					<h2>Tomorrow</h2>
+					<p>jutro, jutro, dzień jutrzejszy...</p>
+				<i class="icon ion-ios-star"></i>
+			</a>
+
+	 -->
+		<div class="content padding">
+			<button class="button button-block button-light">button-light</button>
+			<button class="button button-block button-positive">button-positive</button>
+		</div>
+
+
+	</ion-content>
+
+</ion-view>

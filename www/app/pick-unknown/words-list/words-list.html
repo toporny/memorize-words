@@ -1,0 +1,24 @@
+<ion-view id="dashboard"  title="Dashboard" >
+	<ion-header-bar align-title="left" class="bar-positive" no-tap-scroll="true">
+<!-- 	  <div class="buttons">
+	    <button class="button" ng-click="doSomething()"> << </button>
+	  </div> -->
+	  <h1 class="title" translate="DASHBOARD.TITLE"></h1>
+<!-- 	  <div class="buttons">
+	    <button class="button">Right Button</button>
+	  </div> -->
+	</ion-header-bar>
+
+	<ion-content>
+ 
+
+		<ion-list>
+			<ion-item ng-repeat="item in wordsList.data.items">
+				{{item.title}}
+			</ion-item>
+		</ion-list>
+ 
+
+
+	</ion-content>
+</ion-view>
