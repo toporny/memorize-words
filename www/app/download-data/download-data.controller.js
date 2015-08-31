@@ -21,7 +21,7 @@
       });
 
       $scope.$on("$ionicView.beforeEnter", function() {
-        console.log(345);
+        console.log('starting download data...');
         vm.activate();
       });
 
