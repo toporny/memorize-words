@@ -16,6 +16,8 @@
     vm.goToWordsList = goToWordsList;
     vm.goToWordsLi = goToWordsLi;
     vm.testYourSelf = testYourSelf;
+    vm.goToDownloadData = goToDownloadData;
+
 
 
     // interface
@@ -126,6 +128,13 @@
     function testYourSelf() {
       $state.go('test-yourself');
     }
+
+    function goToDownloadData() {
+        console.log('function goToDownloadData() {');
+      $state.go('download-data');
+    }
+
+
 
 
 
