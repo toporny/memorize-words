@@ -6,7 +6,9 @@
       'pascalprecht.translate',
       'starter.common',
       'starter.dashboard',
-      'starter.pick-unknown'
+      'starter.pick-unknown',
+      'starter.download-data'
+
     ])
     .run(run);
 
